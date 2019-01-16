@@ -1,5 +1,5 @@
 make all: shell.c
-	gcc *.c -O0 -pedantic -ansi -g -Wall
+	gcc *.c 
 
 make clean:
 	rm a.out
