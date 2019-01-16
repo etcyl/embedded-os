@@ -3,11 +3,10 @@ ECE 362
 Matt Fleetwood
 Assignment 1
 
-      This program uses dynamically allocated arrays and bash-like circular buffer.
+      This program uses dynamically allocated arrays for a bash-like circular buffer.
       Acts as a simple shell program for interacting with the user.
       Reads commands from the user to determine what to do.
-      
-      Commands available:
+      That is, a main program accepts inputs from the user in order to accomplish the following commands:
         
         1. !x: 
         repeat the (absolute) input line numbered x (but only if it is one of the saved commands -- there maybe less than 5). 
