@@ -6,7 +6,7 @@ Assignment 1
       This program uses dynamically allocated arrays for a bash-like circular buffer.
       Acts as a simple shell program for interacting with the user.
       Reads commands from the user to determine what to do.
-      That is, a main program accepts inputs from the user in order to accomplish the following commands:
+      That is, a main program or function accepts inputs from the user in order to accomplish the following commands:
         
         1. !x: 
         repeat the (absolute) input line numbered x (but only if it is one of the saved commands -- there maybe less than 5). 
