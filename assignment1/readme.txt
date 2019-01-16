@@ -6,6 +6,9 @@ Assignment 1
       This program uses dynamically allocated arrays for a bash-like circular buffer.
       Acts as a simple shell program for interacting with the user.
       Reads commands from the user to determine what to do.
+      As per the requirements of this assignment, there is "a function (or set of functions) to support
+      a bash-like history capability." 
+      Specifically, an int main() function handles running the entire program.
       That is, a main program or function accepts inputs from the user in order to accomplish the following commands:
         
         1. !x: 
