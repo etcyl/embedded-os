@@ -5,6 +5,7 @@ Portland, OR
 Assignment 1 for ECE 362
 Acts as a simple shell program for interacting with the user.
 Reads commands from the user to determine what to do.
+
 Commands available:
     1. !x: 
         repeat the (absolute) input line numbered x (but only if it is one of the saved commands -- there maybe less than 5). 
