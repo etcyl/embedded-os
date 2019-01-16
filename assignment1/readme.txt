@@ -8,7 +8,7 @@ Assignment 1
       Reads commands from the user to determine what to do.
       As per the requirements of this assignment, there is "a function (or set of functions) to support
       a bash-like history capability." 
-      Specifically, an int main() function handles running the entire program.
+      Specifically, an int main() function handles running the entire program, history() shows the history of commands if they exist, and       several C standard library functions (e.g. atoi(), isdigit(), strcpy()) accomplish the various aspects of this program.
       That is, a main program or function accepts inputs from the user in order to accomplish the following commands:
         
         1. !x: 
