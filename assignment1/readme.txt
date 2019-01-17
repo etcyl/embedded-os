@@ -14,7 +14,6 @@ Assignment 1
         1. !x: 
         repeat the (absolute) input line numbered x (but only if it is one of the saved commands -- there maybe less than 5). 
         In addition to storing a copy of the command, display the original input line or display an error message if the argument x is i           invalid.
-        NOTE this does not work yet beyond !99.
         NOTE: this only works for x arguments [1, 5], i.e. !1, !2, !3, !4, and !5 provide the last 5 lines respectively.
         
         2. exit: 
@@ -26,6 +25,7 @@ Assignment 1
         4. parse n: 
         tokenize input line number n. This input line shouldn't be stored in the buffer, but instead display each word (token) on a 
         separate line.
+        NOTE: this only works for n arguments [1, 5], i.e. parse 1, parse 2, parse 3, parse 4, and parse 5 parse the last 5 lines                 respectively.
 
       To compile the program, type make all in the command line of the terminal.
 
