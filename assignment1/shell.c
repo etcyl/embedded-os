@@ -9,7 +9,8 @@ Commands available:
     1. !x: 
         repeat the (absolute) input line numbered x (but only if it is one of the saved commands -- there maybe less than 5). 
         In addition to storing a copy of the command, display the original input line or display an error message if the argument x is invalid.
-        NOTE this does not work yet beyond !99.
+        NOTE: this does not work yet beyond !99.
+        NOTE: this only works for x arguments [1, 5], i.e. !1, !2, !3, !4, and !5 provide the last 5 lines respectively.
     2. exit: 
         terminate the program.
     3. history: 
