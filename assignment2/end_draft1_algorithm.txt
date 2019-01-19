@@ -24,6 +24,11 @@ N_lines_to_STDOUT(file* fp, int N)
      else if(!isdigit(N)) //File exists but N does not
          write(fp, BUFFER, 10);
      // Default cases here
+     else
+         {
+         write(STDOUT, "default case\n");
+         return 0;
+         }
      
      return 1;
 }
