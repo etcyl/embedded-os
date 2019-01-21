@@ -11,6 +11,10 @@ last n lines from the file are displayed to stdout.
 If n is less than 1 or greater than 9, an error is shown to stdout.
 If file exists but n is not specified, then the last 5 lines of the
 file are displayed to stdout.
+
+NOTE: This program assumes a default n value of 5, which means only
+      integer values will otherwise be accepted. If char, for instance,
+      is passed as argv[2] then this program probably won't work as intended.
 **/
 
 #include <stdio.h>
