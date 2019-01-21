@@ -18,7 +18,7 @@ file are displayed to stdout.
 #include <fcntl.h>
 
 #define RD_LEN 10 // Read this many chars from a file at a time
-#define FILE_CHAR_LIMIT 8192
+#define FILE_CHAR_LIMIT 8192 //Assume we won't have files larger than 8 KB
 
 int main(int argc, char* argv[])
 {
