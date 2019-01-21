@@ -23,7 +23,7 @@ file are displayed to stdout.
 int main(int argc, char* argv[])
 {
         int fd = open(argv[1], O_RDONLY); // Get the filename
-        int n;  // int n = atoi(argv[2]); // Get the value for n
+        int n; // Get the value for n
         int current_char = 0, char_count = 0, done = 0;
         char to_display[RD_LEN], buff[FILE_CHAR_LIMIT];        
         
