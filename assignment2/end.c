@@ -60,20 +60,20 @@ int main(int argc, char* argv[])
                       done = 1; 
                  }
                 close(fd);           
-		
+		// Fewer lines exist in the file than there were requested, so display all lines 
                 if(i <= n)
                   {    for(j = 0; j < i; ++j)
                         write(STDOUT_FILENO, BUFFER[j], RD_LEN);
                    }
-                 else if(i > n)
+                 else if(i > n) // Requested to see fewer lines than are available in the file, so display only last n [1, 9]
                    {
-                     if(n==1)
+                     if(n==1) // Display the last line from the file
                        write(STDOUT_FILENO, BUFFER[i-1], RD_LEN);
                      else
-                     {
+                     { // Determine the offset, j, where to start reading the file buffer from
                       j = i - n;
                     
-                      for(k = 0; k < n; ++k)
+                      for(k = 0; k < n; ++k) // Display the last n lines from the file buffer to standard out
                         write(STDOUT_FILENO, BUFFER[k+j], RD_LEN);
                      }
                    }
