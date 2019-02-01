@@ -1,0 +1,7 @@
+all : end capture
+
+end : end.c
+     gcc end end.c
+
+capture : capture.c
+     gcc capture capture.c
