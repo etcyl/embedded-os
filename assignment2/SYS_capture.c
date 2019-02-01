@@ -5,7 +5,7 @@ Portland, OR
 Assignment 2 for ECE 362
 
 Accepts a filename (filename.txt) that includes a list of commads, one per line, to 
-execute. Each command is executed by a subprocess (using fork and execvp). The output
+execute. Each command is executed by a subprocess (using fork and system calls). The output
 of each subprocess is written to the file capture.txt.
 **/
 
