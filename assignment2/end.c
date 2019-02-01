@@ -4,9 +4,13 @@ Matt Fleetwood
 Portland, OR
 Assignment 2 for ECE 362
 
-Accepts a filename (filename.txt) that includes a list of commads, one per line, to 
-execute. Each command is executed by a subprocess (using fork and execvp). The output
-of each subprocess is written to the file capture.txt.
+Accepts a filename and an optional n integer as input to the program.
+If the filename does not exist, an error message is printed to stdout.
+If the filename exists and n is larger than 0 but less than 10, the 
+last n lines from the file are displayed to stdout.
+If n is less than 1 or greater than 9, an error is shown to stdout.
+If file exists but n is not specified, then the last 5 lines of the
+file are displayed to stdout.
 **/
 
 #include <stdio.h>
