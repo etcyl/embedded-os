@@ -77,12 +77,10 @@ int main(int argc, char *argv[]){
     
    i = j = k = 0;
     printf("j is: %d, num lines is %d\n", j, num_flines);
-    while(j < num_flines) { // Execute num_flines subprocesses
-         
+    while(j < num_flines) { // Execute num_flines subprocesses   
+ 
         int rc = fork();
         
-        char* myargs[7];
-        int num_spaces = 0;
         if (rc < 0) { // fork failed; exit
            fprintf(stderr, "fork failed\n");
            exit(1);
