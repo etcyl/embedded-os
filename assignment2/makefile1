@@ -5,3 +5,7 @@ end : end.c
 
 capture : capture.c
      gcc capture capture.c
+     
+clean :
+     rm capture
+     rm end
