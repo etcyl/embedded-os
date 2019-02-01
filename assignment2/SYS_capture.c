@@ -94,28 +94,8 @@ int main(int argc, char *argv[]){
             else // j > 0 so this is not the first subprocess, append to existing file
              fd = open("./TEST", O_RDWR | O_APPEND);
             
-            int arg_count = 0;
-            // Parse the commands in BUFFER here
-            /**
-            char* tok = strtok(BUFFER[j], " "); // Get the first arg to execvp
-            
-            //myargs[arg_count] = strdup(tok);
-            //printf("myargs[%d] is: %s\n", arg_count, myargs[arg_count]);
-					
-               //printf("TOKEN = %s\n",tok);
-            while(tok != NULL) { 
-               myargs[arg_count] = strdup(tok);
-               //printf("myargs[%d] is: %s\n", arg_count, myargs[arg_count]);
-	       tok = strtok(NULL, " ");
-	       //printf("inside\n");	
-               arg_count += 1;
-            }
-            myargs[arg_count] = NULL;
-            execvp(myargs[0], myargs); //runs word count 
-            **/
             system(BUFFER[j]);
             close(fd);
-            
         } 
           else { // parent goes down this path
           int rc_wait = wait(NULL);
