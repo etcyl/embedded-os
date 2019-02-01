@@ -1,5 +1,10 @@
-make all: end.c
-	gcc *.c 
+make all: end capture
+
+end:
+	gcc end end.c
+capture:
+	gcc capture capture.c
 
 make clean:
-	rm a.out
+	rm end
+	rm capture
