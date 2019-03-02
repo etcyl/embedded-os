@@ -1,2 +1,2 @@
 # embedded-os
-Various assignments from an embedded OS course.
+Various programming assignments in C from an embedded OS course.
