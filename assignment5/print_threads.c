@@ -19,7 +19,7 @@ Feel inspired.
 void *print_thread_ID(void *vargp)
 {
     int thread_ID = (int) vargp;
-    printf("Will thread ID %d please move their white Tahoe in the parking lot\n", thread_ID);
+    printf("Hello there, my thread ID is:\n", thread_ID);
     return;
 }
 
