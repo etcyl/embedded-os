@@ -18,8 +18,8 @@ Feel inspired.
 //Print a thread's ID in a separate thread, because we can
 void *print_thread_ID(void *vargp)
 {
-    int thread_ID = (int) vargp;
-    printf("Hello there, my thread ID is:\n", thread_ID);
+    long thread_ID = (long) vargp;
+    printf("Hello there, my thread ID is:%u\n", thread_ID);
     return;
 }
 
