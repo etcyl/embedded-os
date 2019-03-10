@@ -17,7 +17,7 @@ Feel inspired.
 //Number of threads we are having for dinner
 #define NUM_THREADS 4
 #define NUM_ARRAY_ELEMENTS 16
-int g = 0, global_counter = 0;
+int global_counter = 0;
 int the_array[NUM_ARRAY_ELEMENTS];
 
 //Function to use bubble sort as a thread on a quarter partition of the array
@@ -108,8 +108,6 @@ int main()
    
     for(loop_counter = 0; loop_counter < NUM_THREADS; loop_counter++)
         pthread_join(&tid, NULL);
- 
-    // pthread_exit(NULL);
 
     pthread_create(&tid, NULL, merge_partitions, 0);
     pthread_create(&tid, NULL, merge_partitions, 1);
